@@ -5,10 +5,10 @@
     background-color: #F06C4E;
 }
 .item-size{
-    width: 350px;
+    width: 370px;
 }
 #item{
     display: grid;
     grid-template-columns : repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 20px;
 }

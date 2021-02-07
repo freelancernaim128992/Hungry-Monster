@@ -4,7 +4,7 @@ const button = document.getElementById('search-button');
 
 // Call Api 
 const getFoodData = () =>{
-    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${input.value}`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
     .then(res => res.json())
     .then(data => displayFood(data))
 }
@@ -13,11 +13,13 @@ const getFoodData = () =>{
 const displayFood = items => {
     const showFood = items.meals;
     const display = document.getElementById('item');
+    display.innerHTML= '';
         showFood.forEach(item => {
+            console.log(item);
             const itemsDiv = document.createElement('div');
             const itemInfo = `
                 <div class="item-size mt-5">
-                <img class="w-100" src="${item.strMealThumb}">
+                <img onclick="displayItemAllInfo('${item}')" class="w-100" src="${item.strMealThumb}">
                 <h3 class="text-center bg-light p-3">${item.strMeal}</h3>
                 </div>
             `;
@@ -25,7 +27,10 @@ const displayFood = items => {
             display.appendChild(itemsDiv);
         });
     input.value = '';
-    
+}
 
+const displayItemAllInfo = allInfo => {
+    console.log(allInfo);
+    
 }
 
