@@ -14,16 +14,21 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="item-container" class="container">
         <div class="input-group mt-5 w-50 style-position">
-            <input id="searching-food-input" type="text" class="form-control" placeholder="Search for Meal...">
-            <button onclick="getFoodData()" id="search-button" class="btn text-white btn-background"
-                type="button">Search</button>
+            <input id="search-field" type="text" class="form-control" placeholder="Search for Meal...">
+            <button onclick="searchItems()" class="btn text-white btn-background" type="button">Search</button>
         </div>
-        <div id="item-all-info"></div>
-        <div id="item"></div>
+        <div id="all-items-info">
+            <div class="card mt-5 card-style" style="width: 25rem; height: 20rem">
+                <img src="img.jpg" class="card-img-top w-100" alt="Food Thumbnail">
+                <div class="card-body bg-light">
+                    <h3 class="text-center">header Title</h3>
+                </div>
+            </div>
+        </div>
+        <div id="items-container"></div>
     </div>
-
     <script src="app.js"></script>
 </body>
 

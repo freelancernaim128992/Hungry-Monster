@@ -1,4 +1,4 @@
-.style-position {
+/* .style-position {
     margin: auto;
 }
 .btn-background{
@@ -7,8 +7,12 @@
 .item-size{
     width: 370px;
 }
-#item{
+#allItem{
     display: grid;
     grid-template-columns : repeat(3, 1fr);
     grid-gap: 20px;
+} */
+
+.card-style{
+    border: none;
 }
