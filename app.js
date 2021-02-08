@@ -48,16 +48,16 @@ const getItemInfo = itemInfo => {
         <h3 class="my-3">${itemInfo.strMeal}</h3>
         <div class="ingredients">
             <h5>Ingredients</h5>
-            <input type="checkbox"> <span>${itemInfo.strMeasure1}</span> <span>${itemInfo.strIngredient1}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure2}</span> <span>${itemInfo.strIngredient2}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure3}</span> <span>${itemInfo.strIngredient3}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure4}</span> <span>${itemInfo.strIngredient4}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure5}</span> <span>${itemInfo.strIngredient5}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure6}</span> <span>${itemInfo.strIngredient6}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure7}</span> <span>${itemInfo.strIngredient7}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure8}</span> <span>${itemInfo.strIngredient8}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure9}</span> <span>${itemInfo.strIngredient9}</span><br>
-            <input type="checkbox"> <span>${itemInfo.strMeasure10}</span> <span>${itemInfo.strIngredient10}</span>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure1}</span> <span>${itemInfo.strIngredient1}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure2}</span> <span>${itemInfo.strIngredient2}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure3}</span> <span>${itemInfo.strIngredient3}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure4}</span> <span>${itemInfo.strIngredient4}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure5}</span> <span>${itemInfo.strIngredient5}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure6}</span> <span>${itemInfo.strIngredient6}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure7}</span> <span>${itemInfo.strIngredient7}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure8}</span> <span>${itemInfo.strIngredient8}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure9}</span> <span>${itemInfo.strIngredient9}</span><br>
+            <i class="fas fa-check-square bg-danger text-white"></i> <span>${itemInfo.strMeasure10}</span> <span>${itemInfo.strIngredient10}</span>
         </div>
     `;
     itemContainerInfo.appendChild(itemInfoDiv);
