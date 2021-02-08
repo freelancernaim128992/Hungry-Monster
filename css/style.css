@@ -1,18 +1,49 @@
-/* .style-position {
+/* Input Style Area */
+.input-style {
     margin: auto;
 }
+
+/* Button Style Area */
 .btn-background{
     background-color: #F06C4E;
 }
-.item-size{
-    width: 370px;
-}
-#allItem{
+
+/* All Items Style Area */
+.items-style{
     display: grid;
     grid-template-columns : repeat(3, 1fr);
     grid-gap: 20px;
-} */
+}
 
+.item-info-style {
+    margin: auto;
+    width: 350px;
+}
+
+.item-info-style img {
+    width: 100%;
+    height: 100%;
+}
 .card-style{
     border: none;
+    width: 22rem;
+}
+
+/* Error Message Style Area */
+.error-message {
+    position: relative;
+    height: 40px;
+    display: none;
+}
+
+.error-message p {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    color: red;
+}
+
+.croos-style {
+    padding: 1px 7px;
+    background-color: red;
 }

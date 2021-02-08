@@ -14,21 +14,26 @@
 </head>
 
 <body>
+    <!-- Start Items Container -->
     <div id="item-container" class="container">
-        <div class="input-group mt-5 w-50 style-position">
+        
+        <!-- Start Search And input Area -->
+        <div class="input-group mt-5 w-50 input-style">
             <input id="search-field" type="text" class="form-control" placeholder="Search for Meal...">
             <button onclick="searchItems()" class="btn text-white btn-background" type="button">Search</button>
         </div>
-        <div id="all-items-info">
-            <div class="card mt-5 card-style" style="width: 25rem; height: 20rem">
-                <img src="img.jpg" class="card-img-top w-100" alt="Food Thumbnail">
-                <div class="card-body bg-light">
-                    <h3 class="text-center">header Title</h3>
-                </div>
-            </div>
+        <!-- End Search And input Area -->
+
+        <!-- Start Error Area -->
+        <div id="error-message-area" class="error-message">
+            <p><span class="croos-style text-white">X</span> Please provide a valid meal name.</p>
         </div>
-        <div id="items-container"></div>
+        <!-- End Error Area -->
+
+        <div id="all-items-info" class="mt-4"></div>
+        <div id="items-container" class="items-style"></div>
     </div>
+    <!-- End Items Container -->
     <script src="app.js"></script>
 </body>
 
